@@ -29,12 +29,13 @@ window.minsize(width=500, height=500)
 
 def action():
     print("pressed button")
-    data=entry.get()
+    data=float(entry.get())
+    data=data*1.60934
     labelB.config(text=f"{data}")
 
 
 
-entry = Entry(width=30)
+entry = Entry(width=5)
 entry.grid(column=2,row=1)
 #data=entry.get()
 
